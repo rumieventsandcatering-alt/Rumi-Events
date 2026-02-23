@@ -45,7 +45,7 @@ export default function Navbar() {
                 {/* Logo */}
                 <Link href="/" className="flex items-center gap-3 group">
                     <Image
-                        src={isDarkBackground ? "/rumiwhitelogo.png" : "/rumiblacklogo.png"}
+                        src={isDarkBackground ? "/Home/rumiwhitelogo.png" : "/Home/rumiblacklogo.png"}
                         width={80}
                         height={30}
                         alt="Rumi Events Logo"
