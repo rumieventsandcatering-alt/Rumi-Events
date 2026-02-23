@@ -7,7 +7,7 @@ import { Play, X } from 'lucide-react';
 
 const galleryItems = [
     { id: 1, type: 'image', category: 'Wedding', src: 'https://images.unsplash.com/photo-1511285560929-80b456fea0bc?q=80&w=2069&auto=format&fit=crop', colSpan: 'col-span-2 md:col-span-2' },
-    { id: 2, type: 'image', category: 'Decor', src: '/stage2.jpg', colSpan: 'col-span-1 md:col-span-1' },
+    { id: 2, type: 'image', category: 'Decor', src: '/Gallery/stage2.jpg', colSpan: 'col-span-1 md:col-span-1' },
     { id: 3, type: 'video', category: 'Highlights', src: 'https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?q=80&w=2070&auto=format&fit=crop', colSpan: 'col-span-1 md:col-span-1' },
     { id: 4, type: 'image', category: 'Catering', src: 'https://images.unsplash.com/photo-1555244162-803834f70033?q=80&w=2070&auto=format&fit=crop', colSpan: 'col-span-2 md:col-span-1' },
     { id: 5, type: 'image', category: 'Venue', src: 'https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80&w=2069&auto=format&fit=crop', colSpan: 'col-span-1 md:col-span-2' },
