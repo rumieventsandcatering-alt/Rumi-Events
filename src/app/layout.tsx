@@ -1,3 +1,4 @@
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
@@ -38,6 +39,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
+    
     <html lang="en" className="scroll-smooth">
       <head>
         {/* Basic LocalBusiness Schema for SEO */}
@@ -63,6 +65,7 @@ export default function RootLayout({
       <body
         className={`${inter.variable} font-sans antialiased text-stone-900 bg-stone-50 flex flex-col min-h-screen`}
       >
+        <SpeedInsights/>
         <Navbar />
         <main className="flex-grow pt-15 md:pt-20">
           {children}

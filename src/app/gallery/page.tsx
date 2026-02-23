@@ -12,14 +12,14 @@ const galleryItems = [
     { id: 4, type: 'image', category: 'Catering', src: 'https://images.unsplash.com/photo-1555244162-803834f70033?q=80&w=2070&auto=format&fit=crop', colSpan: 'col-span-2 md:col-span-1' },
     { id: 5, type: 'image', category: 'Venue', src: 'https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80&w=2069&auto=format&fit=crop', colSpan: 'col-span-1 md:col-span-2' },
     { id: 6, type: 'image', category: 'Bridal Shower', src: 'https://images.unsplash.com/photo-1527529482837-4698179dc6ce?q=80&w=2070&auto=format&fit=crop', colSpan: 'col-span-1 md:col-span-1' },
-    { id: 7, type: 'image', category: 'Bridal Shower', src: '/gallery/gallery1.jpeg', colSpan: 'col-span-1 md:col-span-1' },
-    { id: 8, type: 'image', category: 'Stage Decor', src: '/gallery/gallery2.jpeg', colSpan: 'col-span-1 md:col-span-1' },
-    { id: 9, type: 'image', category: 'Stage Decor', src: '/gallery/gallery3.jpeg', colSpan: 'col-span-1 md:col-span-1' },
-    { id: 10, type: 'image', category: 'Stage Decor', src: '/gallery/gallery4.jpeg', colSpan: 'col-span-2 md:col-span-2' },
-    { id: 11, type: 'image', category: 'Stage Decor', src: '/gallery/gallery5.jpeg', colSpan: 'col-span-1 md:col-span-1' },
-    { id: 12, type: 'image', category: 'Stage Decor', src: '/gallery/gallery6.jpeg', colSpan: 'col-span-1 md:col-span-1' },
-    { id: 13, type: 'image', category: 'Catering', src: '/gallery/gallery7.jpeg', colSpan: 'col-span-2 md:col-span-2' },
-    { id: 14, type: 'image', category: 'Stage Decor', src: '/gallery/gallery8.jpeg', colSpan: 'col-span-3 md:col-span-3' },
+    { id: 7, type: 'image', category: 'Bridal Shower', src: '/Gallery/gallery1.jpeg', colSpan: 'col-span-1 md:col-span-1' },
+    { id: 8, type: 'image', category: 'Stage Decor', src: '/Gallery/gallery2.jpeg', colSpan: 'col-span-1 md:col-span-1' },
+    { id: 9, type: 'image', category: 'Stage Decor', src: '/Gallery/gallery3.jpeg', colSpan: 'col-span-1 md:col-span-1' },
+    { id: 10, type: 'image', category: 'Stage Decor', src: '/Gallery/gallery4.jpeg', colSpan: 'col-span-2 md:col-span-2' },
+    { id: 11, type: 'image', category: 'Stage Decor', src: '/Gallery/gallery5.jpeg', colSpan: 'col-span-1 md:col-span-1' },
+    { id: 12, type: 'image', category: 'Stage Decor', src: '/Gallery/gallery6.jpeg', colSpan: 'col-span-1 md:col-span-1' },
+    { id: 13, type: 'image', category: 'Catering', src: '/Gallery/gallery7.jpeg', colSpan: 'col-span-2 md:col-span-2' },
+    { id: 14, type: 'image', category: 'Stage Decor', src: '/Gallery/gallery8.jpeg', colSpan: 'col-span-3 md:col-span-3' },
     
 ];
 

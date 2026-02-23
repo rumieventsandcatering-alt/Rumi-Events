@@ -40,7 +40,7 @@ const testimonials = [
               rating: 5,
             },
           ]
-const clientImages = ["/client1.jpg", "/client2.jpg"];
+
 const videos = ["video4.mp4", "/The beautiful part of love.mp4", "/video5.mp4", "/video3.mp4"];
 
 export default function Home() {
@@ -99,7 +99,7 @@ export default function Home() {
               <div className="relative aspect-square max-w-md mx-auto rounded-full overflow-hidden border-8 border-white shadow-2xl z-10">
                 {/* Image Placeholder for CEO */}
                 <Image
-                  src="/ceo.png"
+                  src="/Home/ceo.png"
                   alt="CEO of Rumi Events"
                   fill
                   className="object-cover"
@@ -202,10 +202,10 @@ export default function Home() {
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8">
             {[
-              "/home/client1.jpg",
-              "/home/client2.jpg",
-              "/home/client3.jpeg",
-              "/home/client4.jpeg",
+              "/Home/client1.jpg",
+              "/Home/client2.jpg",
+              "/Home/client3.jpeg",
+              "/Home/client4.jpeg",
             ].map((img, i) => (
               <motion.div
                 key={i}
