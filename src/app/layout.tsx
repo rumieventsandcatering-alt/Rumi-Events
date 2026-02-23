@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
+import Script from "next/script";
 import Footer from "@/components/Footer";
 
 
@@ -13,15 +14,15 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "Rumi Events | Premium Event Management in Calicut",
+    default: "Rumi Events | Premium Budget Event Management in Calicut",
     template: "%s | Rumi Events"
   },
   description: "Experience premium events at budget prices. Rumi Events offers luxury event management, catering, decor, and photography in Calicut, Kerala, India.",
-  keywords: ["Event Management Calicut", "Premium Events Kerala","Best Event Management in Calicut", "Budget Wedding Planners", "Wedding Decor", "Photography Calicut"],
+  keywords: ["Event Management Calicut", "Premium Events Kerala", "Best Event Management in Calicut", "Budget Wedding Planners", "Wedding Decor", "Photography Calicut", "Best catering in Calicut"],
   authors: [{ name: "Rumi Events" }],
   creator: "Rumi Events",
   openGraph: {
-    title: "Rumi Events | Premium Event Management in Calicut",
+    title: "Rumi Events | Budget Event Management in Calicut",
     description: "Experience premium events at budget prices. Rumi Events offers luxury event management.",
     url: "https://rumievents.com",
     siteName: "Rumi Events",
@@ -39,7 +40,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    
+
     <html lang="en" className="scroll-smooth">
       <head>
         {/* Basic LocalBusiness Schema for SEO */}
@@ -62,10 +63,21 @@ export default function RootLayout({
           }}
         />
       </head>
+
+      <Script src="https://www.googletagmanager.com/gtag/js?id=G-E94TCSX8N4" strategy="afterInteractive" />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-E94TCSX8N4');
+        `}
+      </Script>
       <body
         className={`${inter.variable} font-sans antialiased text-stone-900 bg-stone-50 flex flex-col min-h-screen`}
       >
-        <SpeedInsights/>
+        <SpeedInsights />
         <Navbar />
         <main className="flex-grow pt-15 md:pt-20">
           {children}
