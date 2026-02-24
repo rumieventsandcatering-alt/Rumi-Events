@@ -130,6 +130,18 @@ export default function RootLayout({
             }),
           }}
         />
+        <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      name: "Rumi Events",
+      alternateName: "Rumi Events Calicut",
+      url: "https://rumievents.com"
+    }),
+  }}
+/>
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-E94TCSX8N4"></script>
         <script
           dangerouslySetInnerHTML={{
