@@ -13,26 +13,73 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://rumievents.com"),
+
   title: {
     default: "Rumi Events | Premium Budget Event Management in Calicut",
-    template: "%s | Rumi Events"
+    template: "%s | Rumi Events",
   },
-  description: "Experience premium events at budget prices. Rumi Events offers luxury event management, catering, decor, and photography in Calicut, Kerala, India.",
-  keywords: ["Event Management Calicut", "Premium Events Kerala", "Best Event Management in Calicut", "Budget Wedding Planners", "Wedding Decor", "Photography Calicut", "Best catering in Calicut"],
+
+  description:
+    "Rumi Events is a professional event management company in Calicut offering wedding planning, catering, decoration, photography and complete event solutions across Kerala.",
+
+  keywords: [
+    "Event Management Calicut",
+    "Wedding planners Kerala",
+    "Event planners Kozhikode",
+    "Wedding catering Calicut",
+    "Event decoration Kerala",
+    "Best event management company Kerala",
+  ],
+
   authors: [{ name: "Rumi Events" }],
   creator: "Rumi Events",
-  openGraph: {
-    title: "Rumi Events | Budget Event Management in Calicut",
-    description: "Experience premium events at budget prices. Rumi Events offers luxury event management.",
-    url: "https://rumievents.com",
-    siteName: "Rumi Events",
-    locale: "en_IN",
-    type: "website",
-  },
+  publisher: "Rumi Events",
+
   alternates: {
     canonical: "https://rumievents.com",
   },
-};
+
+  robots: {
+    index: true,
+    follow: true,
+  },
+
+  icons: {
+    icon: "/favicon.ico.jpeg",
+    apple: "/logo.png",
+  },
+
+  openGraph: {
+    title: "Rumi Events | Premium Budget Event Management in Calicut",
+    description:
+      "Premium event management services including wedding planning, catering, decor and photography in Calicut.",
+    url: "https://rumievents.com",
+    siteName: "Rumi Events",
+    images: [
+      {
+        url: "/og-image.jpeg",
+        width: 1200,
+        height: 630,
+        alt: "Rumi Events Event Management",
+      },
+    ],
+    locale: "en_IN",
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Rumi Events | Premium Event Management",
+    description:
+      "Professional event management company in Calicut offering wedding planning and catering services.",
+    images: ["/og-image.jpeg"],
+  },
+
+  verification: {
+    google: "vZPFAR_9cUrfxIbbiZEG8BA4bYy4M5TNcfbL6roQCRQ",
+  },
+};;
 
 export default function RootLayout({
   children,
@@ -43,37 +90,60 @@ export default function RootLayout({
 
     <html lang="en" className="scroll-smooth">
       <head>
+        <meta name="theme-color" content="#ffffff" />
         {/* Basic LocalBusiness Schema for SEO */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@type": "EventResaleService",
-              "name": "Rumi Events",
-              "description": "Premium Event Management in Calicut, Kerala",
-              "address": {
+              "@type": "LocalBusiness",
+              name: "Rumi Events",
+              url: "https://rumievents.com",
+              logo: "https://rumievents.com/logo.png",
+              image: "https://rumievents.com/og-image.jpeg",
+              telephone: "+919539241400",
+              address: {
                 "@type": "PostalAddress",
-                "streetAddress": "Calicut",
-                "addressLocality": "Kozhikode",
-                "addressRegion": "Kerala",
-                "addressCountry": "IN"
+                addressLocality: "Kozhikode",
+                addressRegion: "Kerala",
+                addressCountry: "IN",
               },
-            })
+              sameAs: [
+                "https://www.instagram.com/",
+                "https://www.facebook.com/",
+                "https://www.linkedin.com/",
+              ],
+            }),
+          }}
+        />
+
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              name: "Rumi Events",
+              url: "https://rumievents.com",
+              logo: "https://rumievents.com/logo.png",
+            }),
+          }}
+        />
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-E94TCSX8N4"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){window.dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-E94TCSX8N4');
+            `,
           }}
         />
       </head>
 
-      <Script src="https://www.googletagmanager.com/gtag/js?id=G-E94TCSX8N4" strategy="afterInteractive" />
-      <Script id="google-analytics" strategy="afterInteractive">
-        {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
 
-          gtag('config', 'G-E94TCSX8N4');
-        `}
-      </Script>
       <body
         className={`${inter.variable} font-sans antialiased text-stone-900 bg-stone-50 flex flex-col min-h-screen`}
       >
