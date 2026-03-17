@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://rumievents.com"),
 
   title: {
-    default: "Rumi Events | Premium Budget Event Management in Calicut",
+    default: "Rumi Events | Best PremiumEvent Management in Calicut",
     template: "%s | Rumi Events",
   },
 
@@ -24,12 +24,12 @@ export const metadata: Metadata = {
     "Rumi Events is a professional event management company in Calicut offering wedding planning, catering, decoration, photography and complete event solutions across Kerala.",
 
   keywords: [
-    "Event Management Calicut",
-    "Wedding planners Kerala",
-    "Event planners Kozhikode",
-    "Wedding catering Calicut",
-    "Event decoration Kerala",
-    "Best event management company Kerala",
+    "Event Management in Calicut",
+    "Wedding planners in Kerala",
+    "Event planners in Kozhikode",
+    "Wedding catering in Calicut",
+    "Event decoration in Kerala",
+    "Best event management company in Kerala",
   ],
 
   authors: [{ name: "Rumi Events" }],
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: "Rumi Events | Premium Budget Event Management in Calicut",
+    title: "Rumi Events | Best Premium Budget Event Management in Calicut",
     description:
       "Premium event management services including wedding planning, catering, decor and photography in Calicut.",
     url: "https://rumievents.com",
@@ -70,7 +70,7 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Rumi Events | Premium Event Management",
+    title: "Rumi Events | Premium Event Management | Best Event Management in Calicut",
     description:
       "Professional event management company in Calicut offering wedding planning and catering services.",
     images: ["/og-image.jpeg"],

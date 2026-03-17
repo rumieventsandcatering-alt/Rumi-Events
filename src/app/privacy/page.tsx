@@ -3,6 +3,22 @@ import { Metadata } from 'next';
 export const metadata: Metadata = {
     title: 'Privacy Policy',
     description: 'Privacy Policy for Rumi Events.',
+    alternates: {
+        canonical: 'https://rumievents.com/privacy',
+    },
+    openGraph: {
+        title: 'Privacy Policy | Rumi Events',
+        description: 'Privacy Policy for Rumi Events.',
+        url: 'https://rumievents.com/privacy',
+        siteName: 'Rumi Events',
+        locale: 'en_IN',
+        type: 'website',
+    },
+    twitter: {
+        card: 'summary',
+        title: 'Privacy Policy | Rumi Events',
+        description: 'Privacy Policy for Rumi Events.',
+    },
 };
 
 export default function PrivacyPolicy() {

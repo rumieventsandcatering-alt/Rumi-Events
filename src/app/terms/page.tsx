@@ -3,6 +3,22 @@ import { Metadata } from 'next';
 export const metadata: Metadata = {
     title: 'Terms of Service',
     description: 'Terms of Service for using Rumi Events.',
+    alternates: {
+        canonical: 'https://rumievents.com/terms',
+    },
+    openGraph: {
+        title: 'Terms of Service | Rumi Events',
+        description: 'Terms of Service for using Rumi Events.',
+        url: 'https://rumievents.com/terms',
+        siteName: 'Rumi Events',
+        locale: 'en_IN',
+        type: 'website',
+    },
+    twitter: {
+        card: 'summary',
+        title: 'Terms of Service | Rumi Events',
+        description: 'Terms of Service for using Rumi Events.',
+    },
 };
 
 export default function TermsOfService() {
